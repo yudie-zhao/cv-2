@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box
+}
+
+*::after {
+    box-sizing: border-box
+}
+
+#demo {
+    word-break: break-all;
+}
+
+#div1 {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+#div::before {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+#div1::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+@media(max-width: 500px) {
+    #demo {
+        height: 70vh;
+        overflow: auto;
+    }
+
+    #div1 {
+        position: relative;
+        margin: auto;
+        top: 5px;
+        left: 100px;
+        bottom: 5px;
+        right: 100px;
+    }
+
+    #div1wrapper {
+        height: 30vh;
+    }
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
